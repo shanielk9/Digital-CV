@@ -80,15 +80,15 @@ a:hover {
 
 .bottom{
   position: absolute;
-  left: 20%;
-  bottom: 50%;
+  left: 7%;
+  bottom: 40%;
 
 }
 
 .top{
   position: absolute;
-  right: 20%;
-  top: 5%;
+  right: 10%;
+  top: 10%;
 }
 
 .intro{
@@ -149,4 +149,60 @@ a:hover {
 
 .skill-title{
   padding-top: 30px;
+}
+
+/******************************IDs STYLE******************************/
+
+.carousel-item{
+    padding: 1% 20%;
+}
+
+.a-carousel-item{
+  color: white;
+}
+
+#projects {
+  margin-top: 3%;
+  margin: 0, 5%;
+  text-align: center;
+  background-color: #444f5a;
+}
+
+.test-img{
+  width: 30%;
+  border-radius: 100%;
+  margin: 20px;
+  border: solid white;
+}
+
+.test-img:hover{
+    border: solid #ff9999;
+}
+
+@media (max-width: 850px) {
+  .cloud{
+    height: 10%;
+  }
+
+  .bottom{
+    position:absolute;
+    left: 7%;
+    bottom: 30%;
+
+  }
+
+  .top{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+  }
+}
+
+@media (max-width: 460px){
+  .bottom{
+    position:absolute;
+    left: 7%;
+    bottom: 10%;
+
+}
 }
