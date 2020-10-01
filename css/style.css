@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   text-align: center;
   font-family: 'Merriweather Sans', sans-serif;
@@ -13,16 +13,17 @@ h1 {
   font-size: 5.62rem;
 }
 
-h2{
+h4 {
   color: #ff9999;
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
 
-h3{
+h2,h3 {
   color: #ff9999;
   font-family: 'Montserrat', sans-serif;
+  margin: auto;
 }
 
 hr {
@@ -34,8 +35,8 @@ hr {
   margin: 100px auto;
 }
 
-p{
-    line-height: 2;
+p {
+  line-height: 2;
 }
 
 a {
@@ -50,71 +51,67 @@ a:hover {
   color: #ffbdbd
 }
 
- /******************************CLASSES STYLE******************************/
-
-.top-container{
+/******************************CLASSES STYLE******************************/
+.top-container {
   background-color: #ffded4;
   position: relative;
   padding-top: 100px;
 }
 
-.middle-container{
+.middle-container {
   background-color: #444f5a;
   padding: 100px 0;
-
 }
 
-.bottom-container{
+.bottom-container {
   background-color: #3e4149;
   padding: 50px 0 20px;
-
 }
 
-.mountain{
+.mountain {
   width: 100%;
 }
 
-.cloud{
+.cloud {
   height: 100px;
 }
 
-.bottom{
+.bottom {
   position: absolute;
   left: 7%;
-  bottom: 40%;
-
+  bottom: 50%;
 }
 
-.top{
+.top {
   position: absolute;
   right: 10%;
   top: 10%;
 }
 
-.intro{
+.intro {
   width: 30%;
   margin: auto;
 }
 
-.skill-row{
+.skill-row {
   width: 50%;
   margin: 100px auto;
   text-align: left;
 }
 
-.skill-dev-img{
+.skill-dev-img {
   width: 25%;
   float: left;
   margin: 0 30px;
 }
 
-.skill-des-img{
+.skill-des-img {
   width: 25%;
   float: right;
   margin: 0 30px;
 }
 
-.contact-msg{
+.contact-msg {
   width: 40%;
   margin: 40px auto 60px;
 }
@@ -147,17 +144,16 @@ a:hover {
   text-decoration: none;
 }
 
-.skill-title{
+.skill-title {
   padding-top: 30px;
 }
 
 /******************************IDs STYLE******************************/
-
-.carousel-item{
-    padding: 1% 20%;
+.carousel-item {
+  padding: 1% 20%;
 }
 
-.a-carousel-item{
+.a-carousel-item {
   color: white;
 }
 
@@ -168,46 +164,91 @@ a:hover {
   background-color: #444f5a;
 }
 
-.test-img{
+.test-img {
   width: 30%;
   border-radius: 100%;
   margin: 20px;
   border: solid white;
 }
 
-.test-img:hover{
-    border: solid #ff9999;
+.test-img:hover {
+  border: solid #ff9999;
 }
 
 @media (max-width: 850px) {
-  .cloud{
+  .cloud {
     height: 10%;
   }
 
-  .bottom{
-    position:absolute;
+  .bottom {
+    position: absolute;
     left: 7%;
     bottom: 30%;
-
   }
 
-  .top{
+  .top {
     position: absolute;
     right: 10%;
     top: 10%;
   }
 }
 
-@media (max-width: 460px){
-  .bottom{
-    position:absolute;
+@media only screen and (max-device-width: 480px) {
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3{
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 5rem;
+  }
+
+  .carousel-item{
+    margin-top: 50px;
+  }
+
+  .bottom {
+    position: absolute;
     left: 7%;
     bottom: 10%;
-}
+  }
 
-.text{
-width: 70%;
-font-size: 500%;
-}
+  .atext {
+    margin: 10px 20px;
+    width: 70%;
+    font-size: 200%;
+  }
 
+  .text {
+    width: 80%;
+    font-size: 170%;
+    margin: auto;
+  }
+
+  .skill-text {
+    width: 70%;
+    font-size: 150%;
+    margin: auto;
+  }
+
+  .carousel-text{
+    font-size: 150%;
+  }
+
+  .msg-text {
+    width: 70%;
+    font-size: 200%;
+    margin: 40px auto 60px;
+  }
+
+  .skill-row{
+    width: 95%;
+  }
+
+  .skill-title{
+    width: 70%;
+  }
 }
