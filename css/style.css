@@ -136,6 +136,7 @@ a:hover {
 .contact-msg {
   width: 40%;
   margin: 40px auto 60px;
+
 }
 
 .btn {
@@ -152,17 +153,17 @@ a:hover {
   color: #fff2e5;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
-  text-decoration: none;
+  font-weight: bold;
 }
 
 .btn:hover {
-  background: #fae1e1;
-  background-image: -webkit-linear-gradient(top, #fae1e1, #eb9788);
-  background-image: -moz-linear-gradient(top, #fae1e1, #eb9788);
-  background-image: -ms-linear-gradient(top, #fae1e1, #eb9788);
-  background-image: -o-linear-gradient(top, #fae1e1, #eb9788);
-  background-image: linear-gradient(to bottom, #fae1e1, #eb9788);
-  color: #b7472a;
+  background: #0635c9;
+  background-image: -webkit-linear-gradient(top, #1ae5be, 0635c9);
+  background-image: -moz-linear-gradient(top, #1ae5be, #0635c9);
+  background-image: -ms-linear-gradient(top, #1ae5be, #0635c9);
+  background-image: -o-linear-gradient(top, #1ae5be, #0635c9);
+  background-image: linear-gradient(to bottom, #1ae5be, #0635c9);
+  color: white;
   text-decoration: none;
 }
 
@@ -213,6 +214,14 @@ a:hover {
 
 .icon{
   filter: invert(100%);
+}
+
+a.atext {
+  color: #0635c9;
+}
+
+a.atext:hover{
+  color: #1ae5be
 }
 
 @media (max-width: 850px) {
@@ -271,15 +280,10 @@ a:hover {
     bottom: 10%;
   }
 
-  .atext {
+  a.atext {
     margin: 10px 20px;
     width: 70%;
     font-size: 160%;
-    color: #0635c9;
-  }
-
-.atext:hover{
-    color: #1ae5be
   }
 
   .text {
