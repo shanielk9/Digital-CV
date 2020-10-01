@@ -163,7 +163,7 @@ a:hover {
 
 #projects {
   margin-top: 3%;
-  margin: 0, 5%;
+  margin: 1% 5%;
   text-align: center;
   background-color: #444f5a;
 }
@@ -203,6 +203,11 @@ a:hover {
     position:absolute;
     left: 7%;
     bottom: 10%;
-
 }
+
+.text{
+width: 70%;
+font-size: 200%;
+}
+
 }
