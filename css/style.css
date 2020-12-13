@@ -143,9 +143,9 @@ a:hover {
 }
 
 .self-img {
-  margin-top: 0;
+  margin-top: 50px;
   padding: 20px;
-  height: 70%;
+  height: 50%;
 }
 
 .mountain {
@@ -348,23 +348,23 @@ a.atext:hover {
 
   .text {
     width: 80%;
-    font-size: 170%;
+    font-size: 80%;
     margin: auto;
   }
 
   .skill-text {
     width: 70%;
-    font-size: 150%;
+    font-size: 90%;
     margin: auto;
   }
 
   .carousel-text {
-    font-size: 150%;
+    font-size: 90%;
   }
 
   .msg-text {
     width: 70%;
-    font-size: 200%;
+    font-size: 90%;
     margin: 40px auto 60px;
   }
 
@@ -376,6 +376,7 @@ a.atext:hover {
 
   .skill-title {
     width: 70%;
+    font-size: 110%;
   }
 
   .skill-dev-img {
@@ -387,14 +388,42 @@ a.atext:hover {
     width: 20%;
     margin-top: 30px;
   }
+
+  .proj-title{
+    font-size: 110%;
+  }
+
+  .contact-text{
+    font-size: 110%;
+  }
+
+  .footer-link{
+    font-size: 100%;
+  }
 }
 
 /******************************NAV STYLE******************************/
 .nav {
   height: var(--header-height);
-  display: flex;
+  display: contents;
   justify-content: space-between;
   align-items: center;
+}
+
+.bx-menu::before{
+  display: none;
+  padding: 14px 16px;
+}
+
+.topnav__menu a{
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav__menu{
+  float: right;
 }
 
 @media screen and (max-width: 768px) {
@@ -408,7 +437,18 @@ a.atext:hover {
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.3);
     transition: 0.5s;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
+  }
+
+.bx-menu::before{
+    display:contents;
+    padding: 14px 0;
+  }
+
+  .bx-nemu{
+    right: 15px;
+    margin-bottom: 15px;
+    position: absolute;
   }
 
   ul.nav__list{
@@ -416,7 +456,10 @@ a.atext:hover {
   }
 }
 
-.nav__item {}
+.nav__item {
+  margin : 10px 0;
+  padding: 14px 5px;
+}
 
 .nav__link {
   position: relative;
@@ -425,6 +468,7 @@ a.atext:hover {
 
 .nav__link:hover {
   color: var(--white-color);
+  text-decoration: none;
 }
 
 .active::after {
@@ -443,11 +487,15 @@ div.carousel-item.active::after {
   color: var(--text-color);
   font-size: 1.5rem;
   cursor: pointer;
+  padding-top: 14px;
+  margin-top:10px;
+  float: right;
+  margin-right: 20px;
 }
 
 .nav__list {
-  margin: 0;
-  padding: 0;
+  margin-right: 0;
+  padding-right: 0;
   list-style: none;
   display: flex;
   flex-direction: row;
