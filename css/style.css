@@ -1,3 +1,32 @@
+:root {
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+}
+
+:root {
+  --z-fixed: 100;
+}
+
+:root {
+  --header-height: 3rem;
+  --font-medium: 500;
+}
+
+/*===== Colors =====*/
+:root {
+  --first-color: #ffd5ab;
+  --white-color: #fafaff;
+  --dark-color: #2a3b47;
+  --text-color: #b7472a;
+}
+
+/******************************TYPE STYLE******************************/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   text-align: center;
@@ -22,14 +51,14 @@ h3 {
   font-weight: bolder;
 }
 
-h2{
+h2 {
   color: #85331e;
   font-weight: bolder;
   font-family: 'Montserrat', sans-serif;
   margin: auto;
 }
 
-  h4 {
+h4 {
   color: #85331e;
   font-weight: bolder;
   font-family: 'Montserrat', sans-serif;
@@ -37,7 +66,7 @@ h2{
   margin: auto;
 }
 
-h5{
+h5 {
   color: #85331e;
   font-weight: bolder;
   font-family: 'Montserrat', sans-serif;
@@ -50,7 +79,8 @@ hr {
   border-right-style: none;
   border-bottom-style: none;
   width: 4%;
-  margin: 100px auto;
+  margin: auto;
+  margin-top: 50px;
 }
 
 p {
@@ -73,12 +103,20 @@ a:hover {
 .top-container {
   background-color: #ffd5ab;
   position: relative;
+  height: 100vh;
   padding-top: 100px;
 }
 
 .middle-container {
   background-color: white;
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contact-container {
+  padding-bottom: 100px;
 }
 
 .bottom-container {
@@ -86,8 +124,28 @@ a:hover {
   padding: 50px 0 20px;
 }
 
-.self-img{
+.bd-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #ffd5ab;
+}
+
+.self-img {
+  margin-top: 50px;
   padding: 20px;
+  height: 70%;
 }
 
 .mountain {
@@ -111,7 +169,7 @@ a:hover {
 }
 
 .intro {
-  width: 30%;
+  width: 40%;
   margin: auto;
 }
 
@@ -136,7 +194,6 @@ a:hover {
 .contact-msg {
   width: 40%;
   margin: 40px auto 60px;
-
 }
 
 .btn {
@@ -158,7 +215,7 @@ a:hover {
 
 .btn:hover {
   background: #0635c9;
-  background-image: -webkit-linear-gradient(top, #1ae5be, 0635c9);
+  background-image: -webkit-linear-gradient(top, #1ae5be, #0635c9);
   background-image: -moz-linear-gradient(top, #1ae5be, #0635c9);
   background-image: -ms-linear-gradient(top, #1ae5be, #0635c9);
   background-image: -o-linear-gradient(top, #1ae5be, #0635c9);
@@ -185,20 +242,19 @@ a:hover {
   margin: 1% 5%;
   text-align: center;
   background-color: white;
-
 }
 
-.proj-div{
+.proj-div {
   padding: 20px 0;
   margin: 0 20px;
   border-radius: 2%;
-  box-shadow: 2px 2px 6px 2px rgba(0,0,0,.1);
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, .1);
 }
 
-.skill-div{
+.skill-div {
   padding: 20px;
   border-radius: 2%;
-  box-shadow: 2px 2px 6px 2px rgba(0,0,0,.1);
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, .1);
 }
 
 .test-img {
@@ -212,7 +268,7 @@ a:hover {
   border: solid #1ae5be;
 }
 
-.icon{
+.icon {
   filter: invert(100%);
 }
 
@@ -220,7 +276,7 @@ a.atext {
   color: #0635c9;
 }
 
-a.atext:hover{
+a.atext:hover {
   color: #1ae5be
 }
 
@@ -252,26 +308,30 @@ a.atext:hover{
     margin-bottom: auto;
   }
 
-  h3{
+  h3 {
     font-size: 3rem;
   }
 
-  h4{
+  h4 {
     font-size: 2.5rem;
   }
 
-  h5{
+  h5 {
     font-size: 2rem;
   }
 
-  a{
+  a {
     font-size: 1.5rem;
   }
 
-
-
-  .carousel-item{
+  .carousel-item {
     margin-top: 50px;
+  }
+
+  .self-img {
+    height: 40%;
+    padding-top: 0;
+    margin-top: 20px;
   }
 
   .bottom {
@@ -298,7 +358,7 @@ a.atext:hover{
     margin: auto;
   }
 
-  .carousel-text{
+  .carousel-text {
     font-size: 150%;
   }
 
@@ -308,23 +368,103 @@ a.atext:hover{
     margin: 40px auto 60px;
   }
 
-  .skill-row{
+  .skill-row {
     width: 90%;
     margin: 20px auto;
     padding: 30px;
   }
 
-  .skill-title{
+  .skill-title {
     width: 70%;
   }
 
-  .skill-dev-img{
+  .skill-dev-img {
     width: 20%;
     margin-top: 30px;
   }
 
-  .skill-des-img{
+  .skill-des-img {
     width: 20%;
     margin-top: 30px;
   }
+}
+
+/******************************NAV STYLE******************************/
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    size: 2px;
+    top: var(--header-height);
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+    backdrop-filter: blur(10px);
+  }
+
+  ul.nav__list{
+    display: block;
+  }
+}
+
+.nav__item {}
+
+.nav__link {
+  position: relative;
+  color: var(--dark-color);
+}
+
+.nav__link:hover {
+  color: var(--white-color);
+}
+
+.active::after {
+  background-color: var(--text-color);
+}
+
+div.carousel-item.active::after {
+  background-color: transparent;
+}
+
+.nav__logo {
+  color: var(--text-color);
+}
+
+.nav__toggle {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*=== Show menu ===*/
+.show {
+  right: 0;
+}
+
+/* Active menu */
+.active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
 }
