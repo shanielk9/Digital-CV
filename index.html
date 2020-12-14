@@ -8,13 +8,17 @@
 
   <title>Shani Elkalay | Software Developer</title>
 
+  <link rel="icon" href="favicon.ico">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-  <link rel="icon" href="favicon.ico">
+
 
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -24,33 +28,37 @@
 <body>
   <header class="l-header">
     <nav class="nav bd-grid">
-      <div class="topnav__menu">
-        <a href="#" class="nav__logo">Shani Elkalay</a>
+      <div class="topnav-menu">
+        <a href="#" class="nav-logo">Shani Elkalay</a>
       </div>
 
-            <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">Me</a></li>
-                <li class="nav__item"><a href="#Spaciallties" class="nav__link">Spaciallties</a></li>
-                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-              </ul>
-            </div>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Me</a></li>
+          <li class="nav-item"><a href="#Spaciallties" class="nav-link">Spaciallties</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-              <i class='bx bx-menu'></i>
-            </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
     </nav>
   </header>
 
   <main class="l-main">
     <section class="home" id="home">
       <div class="top-container">
-        <img class="cloud top" src="images/cloud.png" alt="cloud">
-        <h1 class="home__title">I'm Shani.</h1>
-        <h2 class="home__title">a junior software developer.</h2>
-        <img class="cloud bottom" src="images/cloud.png" alt="cloud">
+        <h1 class="home-title">I'm Shani.</h1>
+        <h2 class="home-title">
+          <a href="" class="typewrite" data-period="2000" data-type='[ "a junior software developer.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+            <span class="wrap"></span>
+          </a>
+        </h2>
+
         <img class="self-img" src="images/personal-Image.png" alt="Shani Elkalay">
       </div>
     </section>
@@ -60,11 +68,17 @@
     <section class="me section" id="about">
       <div class="middle-container">
         <div class="profile">
-          <h3 class="Me__title">Hi.</h3>
-          <p class="intro text">I'm a programmer based in Israel.
-            <br>Just graduated Computer Science (B.Sc) with 90 GPA! <br>
-            I have a passion for tecnology and love to create programs <br>
-            for web, desktop and mobile devices.
+          <h3 class="Me-title">Hi.</h3>
+          <p class="intro text">I'm a programmer.
+            <br>Just graduated Computer Science (B.Sc) with 90 GPA!
+            <br>My experience is gained only within the degree,
+            <br>but I am full of passion for Technology
+            <br> and love to learn and enrich my knowledge,
+            <br>I love to solve complex problems and challenge myself.
+            <br><br>These days, I am independently studying
+            <br>the field of Web Development.
+            <br>I am highly motivated, self-learner, team player,
+            <br>out of the box thinking and love complex logic puzzles.
           </p>
         </div>
         <hr>
@@ -74,19 +88,56 @@
 
     <section class="Spaciallties section" id="Spaciallties">
       <div class="middle-container">
-        <div class="skills">
+        <div class="Spaciallties">
           <h4 class="Spaciallties-main">My Spaciallties.</h4>
-          <div class="skill-div skill-row">
-            <img class="skill-dev-img" src="images/development.png" alt="development icon">
-            <h5 class="skill-title skill-title-dev">Develop what you need.</h5>
-            <p class="skill-text skill-text-dev ">I'm a developer, so I know how to create your program to run across devices using the latest technologies available.</p>
+          <div class="square-div square-row">
+            <img class="Spaciallties-dev-img" src="images/development.png" alt="development icon">
+            <h5 class="Spaciallties-title Spaciallties-title-dev">Develop what you need.</h5>
+            <p class="Spaciallties-text Spaciallties-text-dev ">I'm a developer, so I know how to create your program to run across devices using the latest technologies available.</p>
           </div>
-          <div class="skill-div skill-row">
-            <img class="skill-des-img" src="images/designer.png" alt="designer icon">
-            <h5 class="skill-title skill-title-des">Design what you want.</h5>
-            <p class="skill-text skill-text-des">I am passoinate about design and in my free time I like to mess around with Photoshop and create new things.</p>
+          <div class="square-div square-row">
+            <img class="Spaciallties-des-img" src="images/designer.png" alt="designer icon">
+            <h5 class="Spaciallties-title Spaciallties-title-des">Design what you want.</h5>
+            <p class="Spaciallties-text Spaciallties-text-des">I am passoinate about design and in my free time I like to mess around with Photoshop and create new things.</p>
           </div>
         </div>
+        <hr>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="middle-container">
+        <div class="skills">
+          <h4 class="skills-title">Skills.</h4>
+          <h5 class="skills-desc">Knowledge I have:</h5>
+        </div>
+
+        <div class="skills-container bd-grid">
+          <div class="skills-box">
+            <div class="square-div square-row">
+              <h6 class="skills-subtitle">Programming</h6>
+              <span class="skills-name">Html</span>
+              <span class="skills-name">Css</span>
+              <span class="skills-name">C/C++</span>
+              <span class="skills-name">C#</span>
+              <span class="skills-name">Python</span>
+              <span class="skills-name">Java</span>
+            </div>
+            <div class="square-div square-row">
+              <h6 class="skills-subtitle">knowledge</h6>
+              <span class="skills-name">OOP</span>
+              <span class="skills-name">Design Patterns</span>
+              <span class="skills-name">.NET Framework</span>
+              <span class="skills-name">Android OS</span>
+              <span class="skills-name">SQL</span>
+            </div>
+          </div>
+
+          <div class="skills-img">
+            <img src="images/skills.png" alt="">
+          </div>
+        </div>
+
         <hr>
       </div>
     </section>
@@ -94,12 +145,12 @@
 
     <section class="projects section" id="projects">
       <div class="middle-container">
-        <div class="proj-div">
-          <div>
-            <h4 class="proj-main">My Projects.</h4>
-            <h5 class="proj-title">Some taste of me</h5>
-          </div>
+        <div>
+          <h4 class="proj-main">My Projects.</h4>
+          <h5 class="proj-title">Some taste of me</h5>
+        </div>
 
+        <div class="proj-div">
           <div id="c" class="carousel slide" data-ride="false">
             <div class="carousel-inner">
               <div class="carousel-item active">

@@ -5,23 +5,6 @@
   --mb-4: 2rem;
 }
 
-:root {
-  --z-fixed: 100;
-}
-
-:root {
-  --header-height: 3rem;
-  --font-medium: 500;
-}
-
-/*===== Colors =====*/
-:root {
-  --first-color: #ffd5ab;
-  --white-color: #fafaff;
-  --dark-color: #2a3b47;
-  --text-color: #b7472a;
-}
-
 /******************************TYPE STYLE******************************/
 html {
   scroll-behavior: smooth;
@@ -36,7 +19,7 @@ body {
 }
 
 h1 {
-  color: #b7472a;
+  color: white; /*#b7472a;*/
   margin: 50px auto 0 auto;
   font-family: 'Sacramento', cursive;
   font-size: 5.62rem;
@@ -47,15 +30,27 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   padding-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 5%;
   font-weight: bolder;
 }
 
 h2 {
-  color: #85331e;
+  color: white;/*#85331e;*/
   font-weight: bolder;
   font-family: 'Montserrat', sans-serif;
   margin: auto;
+}
+
+.typewrite{
+  color: white;/*#85331e;*/
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+}
+
+.typewrite:hover{
+  text-decoration:none;
+  color: white;
 }
 
 h4 {
@@ -64,6 +59,7 @@ h4 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   margin: auto;
+  margin-top: 50px;
 }
 
 h5 {
@@ -73,6 +69,15 @@ h5 {
   margin: auto;
 }
 
+h6 {
+  color: #85331e;
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+
 hr {
   border-top: 5px dotted #438a5e;
   border-left-style: none;
@@ -80,7 +85,7 @@ hr {
   border-bottom-style: none;
   width: 4%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 p {
@@ -101,15 +106,15 @@ a:hover {
 
 /******************************CLASSES STYLE******************************/
 .top-container {
-  background-color: #ffd5ab;
+  background-color: #E82329 ;/*#ffd5ab;*/
   position: relative;
   height: 100vh;
   padding-top: 100px;
 }
 
 .middle-container {
-  background-color: white;
-  padding-top: 100px;
+  background-color: transparent;/*white;*/
+  padding-top: 50px;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -120,7 +125,7 @@ a:hover {
 }
 
 .bottom-container {
-  background-color: #b7472a;
+  background-color: #E82329;/*#b7472a;*/
   padding: 50px 0 20px;
 }
 
@@ -135,11 +140,17 @@ a:hover {
 
 .l-header {
   width: 100%;
+  height: 10%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #ffd5ab;
+  /*background-color: #ffd5ab;*/
+  background-size: 20px 20px;
+ background-image:
+   linear-gradient(to right, grey 1px, transparent 1px),
+   linear-gradient(to bottom, grey 1px, transparent 1px);
+   background-color: white;
 }
 
 .self-img {
@@ -165,7 +176,7 @@ a:hover {
 .top {
   position: absolute;
   right: 10%;
-  top: 10%;
+  top: 15%;
 }
 
 .intro {
@@ -173,19 +184,19 @@ a:hover {
   margin: auto;
 }
 
-.skill-row {
+.square-row {
   width: 50%;
   margin: 50px auto;
   text-align: left;
 }
 
-.skill-dev-img {
+.Spaciallties-dev-img {
   width: 15%;
   float: left;
   margin: 15px 30px;
 }
 
-.skill-des-img {
+.Spaciallties-des-img {
   width: 15%;
   float: right;
   margin: 10px 30px;
@@ -196,7 +207,7 @@ a:hover {
   margin: 40px auto 60px;
 }
 
-.btn {
+/*.btn {
   background: #eb9788;
   background-image: -webkit-linear-gradient(top, #eb9788, #b7472a);
   background-image: -moz-linear-gradient(top, #eb9788, #b7472a);
@@ -222,9 +233,32 @@ a:hover {
   background-image: linear-gradient(to bottom, #1ae5be, #0635c9);
   color: white;
   text-decoration: none;
-}
+}*/
 
-.skill-title {
+
+         .btn {background-image: linear-gradient(to right, #E82329 0%, #EA384D  51%, #E82329  100%)}
+         .btn {
+            padding: 15px 45px;
+            margin: 0 20% 5%;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            /*background-size: auto;*/
+            color: white;
+            box-shadow: 0 0 20px lightgrey;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn:hover {
+            background-position: left center; /* change the direction of the change here */
+            color: black;
+            font-weight: bolder;
+            text-decoration: none;
+          }
+
+
+.Spaciallties-title {
   padding-top: 30px;
 }
 
@@ -249,9 +283,14 @@ a:hover {
   margin: 0 20px;
   border-radius: 2%;
   box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, .1);
+  background-size: 20px 20px;
+ background-image:
+   linear-gradient(to right, grey 1px, transparent 1px),
+   linear-gradient(to bottom, grey 1px, transparent 1px);
+   background-color: white;
 }
 
-.skill-div {
+.square-div {
   padding: 20px;
   border-radius: 2%;
   box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, .1);
@@ -274,10 +313,33 @@ a:hover {
 
 a.atext {
   color: #0635c9;
+  background-color: white;
 }
 
 a.atext:hover {
   color: #1ae5be
+}
+
+.carousel-text{
+  background-color: white;
+}
+
+.proj-title{
+  margin-bottom: 20px;
+}
+
+.skills-name {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-right: var(--mb-2);
+  margin-bottom: var(--mb-3);
+  padding: 0.25rem 0.5rem;
+  background-color: #f1f1f1;
+  border-radius: 0.25rem;
+}
+.skills-name:hover {
+  background-color: #E82329;
+  color: #fafaff;
 }
 
 @media (max-width: 850px) {
@@ -314,10 +376,19 @@ a.atext:hover {
 
   h4 {
     font-size: 2.5rem;
+    margin-top: 0;
   }
 
   h5 {
-    font-size: 2rem;
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  hr{
+    margin-top: 50px;
   }
 
   a {
@@ -352,7 +423,7 @@ a.atext:hover {
     margin: auto;
   }
 
-  .skill-text {
+  .Spaciallties-text {
     width: 70%;
     font-size: 90%;
     margin: auto;
@@ -360,6 +431,7 @@ a.atext:hover {
 
   .carousel-text {
     font-size: 90%;
+
   }
 
   .msg-text {
@@ -368,28 +440,28 @@ a.atext:hover {
     margin: 40px auto 60px;
   }
 
-  .skill-row {
+  .square-row {
     width: 90%;
     margin: 20px auto;
     padding: 30px;
   }
 
-  .skill-title {
+  .Spaciallties-title {
     width: 70%;
     font-size: 110%;
   }
 
-  .skill-dev-img {
+  .Spaciallties-dev-img {
     width: 20%;
     margin-top: 30px;
   }
 
-  .skill-des-img {
+  .Spaciallties-des-img {
     width: 20%;
     margin-top: 30px;
   }
 
-  .proj-title{
+  .h5{
     font-size: 110%;
   }
 
@@ -404,7 +476,7 @@ a.atext:hover {
 
 /******************************NAV STYLE******************************/
 .nav {
-  height: var(--header-height);
+  height: 3rem;
   display: contents;
   justify-content: space-between;
   align-items: center;
@@ -415,22 +487,22 @@ a.atext:hover {
   padding: 14px 16px;
 }
 
-.topnav__menu a{
+.topnav-menu a{
   float: left;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-.nav__menu{
+.nav-menu{
   float: right;
 }
 
 @media screen and (max-width: 768px) {
-  .nav__menu {
+  .nav-menu {
     position: fixed;
     size: 2px;
-    top: var(--header-height);
+    top: 3rem;
     right: -100%;
     width: 80%;
     height: 100%;
@@ -451,40 +523,47 @@ a.atext:hover {
     position: absolute;
   }
 
-  ul.nav__list{
+  ul.nav-list{
     display: block;
   }
 }
 
-.nav__item {
-  margin : 10px 0;
+.nav-item {
+  margin : 0 0;
   padding: 14px 5px;
 }
 
-.nav__link {
+.nav-link {
   position: relative;
-  color: var(--dark-color);
+  color: #2a3b47;
 }
 
-.nav__link:hover {
-  color: var(--white-color);
+.nav-link:hover {
+  color: black;
+  font-weight: bolder;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
   text-decoration: none;
 }
 
 .active::after {
-  background-color: var(--text-color);
+  background-color: #b7472a;
 }
 
 div.carousel-item.active::after {
   background-color: transparent;
 }
 
-.nav__logo {
-  color: var(--text-color);
+.nav-logo {
+  color: #b7472a;
+  font-weight: bolder;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 130%;
+  margin-top:10px;
 }
 
-.nav__toggle {
-  color: var(--text-color);
+.nav-toggle {
+  color: #b7472a;
   font-size: 1.5rem;
   cursor: pointer;
   padding-top: 14px;
@@ -493,7 +572,7 @@ div.carousel-item.active::after {
   margin-right: 20px;
 }
 
-.nav__list {
+.nav-list {
   margin-right: 0;
   padding-right: 0;
   list-style: none;
